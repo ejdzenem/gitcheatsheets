@@ -42,19 +42,19 @@ Deletes the specified branch
 
 ## Create repositories
 
-A new repository can either be created locally, or an existing repository can be cloned. When a repository was initialized locally, you have to push it to GitHub afterwards.
+A new repository can either be created locally, or an existing repository can be cloned. When a repository was initialized locally, you have to push it to Gitlab afterwards.
 
 ```$ git init```
 
-The git init command turns an existing directory into a new Git repository inside the folder you are running this command. After using the `git init` command, link the local repository to an empty GitHub repository using the following command:
+The git init command turns an existing directory into a new Git repository inside the folder you are running this command. After using the `git init` command, link the local repository to an empty Gitlab repository using the following command:
 
 ```$ git remote add origin [url]```
 
-Specifies the remote repository for your local repository. The url points to a repository on GitHub.
+Specifies the remote repository for your local repository. The url points to a repository on Gitlab.
 
 ```$ git clone [url]```
 
-Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
+Clone (download) a repository that already exists on Gitlab, including all of the files, branches, and commits
 
 ## The `.gitignore` file
 
@@ -74,11 +74,11 @@ Combines remote tracking branches into current local branch
 
 ```$ git push```
 
-Uploads all local branch commits to GitHub
+Uploads all local branch commits to Gitlab
 
 ```$ git pull```
 
-Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. `git pull` is a combination of `git fetch` and `git merge`
+Updates your current local working branch with all new commits from the corresponding remote branch on Gitlab. `git pull` is a combination of `git fetch` and `git merge`
 
 ## Make changes
 
@@ -120,12 +120,10 @@ Undoes all commits after `[commit]`, preserving changes locally
 
 Discards all history and changes back to the specified commit
 
-> CAUTION! Changing history can have nasty side effects. If you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at [github.community](https://github.community) or contact support.
-
 ## Glossary
 
 - **git**: an open source, distributed version-control system
-- **Gitlab**: a platform for hosting and collaborating on Git repositories
+- **Gitlab**/**GitHub**/**BitBucket**/: a platform for hosting and collaborating on Git repositories
 - **commit**: a Git object, a snapshot of your entire repository compressed into a SHA
 - **branch**: a lightweight movable pointer to a commit
 - **clone**: a local version of a repository, including all commits and branches
