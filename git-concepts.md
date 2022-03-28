@@ -7,7 +7,7 @@ I can store different versions of the project.
 These in-repository changes are tracked via _branches_.  
 To switch from my current branch to another one, I will _check out_ the branch I want to switch to.
 Before switching, Git will force me to deal with the uncommitted changes by either _committing_ them, _stashing_ them, or discarding them.  
-The _commit_ process will **permanently store my changes** to the repository, whereas _stash_ will **temporarily shelve the changes**, allowing me to pull them off the shelf and reapply them later.
+The _commit_ process will **permanently store my changes** to the repository, whereas _stash_ will **temporarily** shelve the changes, allowing me to pull them off the shelf and reapply them later.
 
 Git is an open source, distributed version control system founded in command line interaction. This guide provides the day-to-day setup and commands to use Git locally and connect repositories to Gitlab for a complete collaboration workflow.
 
@@ -31,9 +31,9 @@ A parallel version of repository. It is contained within the repository, but doe
 
 The connection of a local repository with one on Gitlab. It permits revision history to be synchronized by publishing local commits and downloading any new changes from Gitlab.
 
-### Pull Request
+### Merge Request
 
-A  feature on Gitlab which provides conversation, line-by-line code review, change history analysis, and summaries of modified files.
+A  feature on Gitlab (called pull request in Github) which provides conversation, line-by-line code review, change history analysis, and summaries of modified files.
 
 ## Configuring
 
