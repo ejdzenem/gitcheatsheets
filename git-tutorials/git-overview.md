@@ -30,7 +30,7 @@ Whether or not you've worked with version control before, there are a few things
 
 - Branches are lightweight and cheap, so it's OK to have many of them
 - Git stores changes in SHA hashes, which work by compressing text files. That makes Git a very good version control system (VCS) for software programming, but not so good for binary files like images or videos.
-- Git repositories can be connected, so you can work on one locally on your own machine, and connect it to a shared repository. This way, you can [push](/git-push) and [pull](/git-pull) changes to a repository and easily collaborate with others.
+- Git repositories can be connected, so you can work on one locally on your own machine, and connect it to a shared repository. This way, you can [push](/git-tutorials/git-push.md) and [pull](/git-tutorials/git-pull.md) changes to a repository and easily collaborate with others.
 
 ## What is Git Written in?
 
@@ -70,20 +70,20 @@ The benefits of this can't be overstated.
 
 Some of the most important and most used commands that you'll find there are:
 
-- `git clone [url]`: [Clone](/git-clone) (download) a repository that already exists on Gitlab, including all of the files, branches, and commits.
-- `git status`: [Status](/git-status) Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
+- `git clone [url]`: [Clone](/git-tutorials/git-clone.md) (download) a repository that already exists on Gitlab, including all of the files, branches, and commits.
+- `git status`: [Status](/git-tutorials/git-status.md) Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
 - `git branch`: [Branch](/git-branch) This shows the existing branches in your local repository. You can also use `git branch [branch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
 - `git checkout [branch-name]`: Switches to the specified branch and updates the working directory.
-- `git add [file]`: [Add](/git-add) Snapshots the file in preparation for versioning, adding it to the staging area.
-- `git commit -m "descriptive message"`: [Commit](/git-commit) Records file snapshots permanently in the version history.
-- `git pull`: [Pull](/git-pull) Updates your current local working branch with all new commits from the corresponding remote branch on Gitlab. `git pull` is a combination of `git fetch` and `git merge`.
-- `git push`: [Push](/git-push) Uploads all local branch commits to the remote.
+- `git add [file]`: [Add](/git-tutorials/git-add.md) Snapshots the file in preparation for versioning, adding it to the staging area.
+- `git commit -m "descriptive message"`: [Commit](/git-tutorials/git-commit.md) Records file snapshots permanently in the version history.
+- `git pull`: [Pull](/git-tutorials/git-pull.md) Updates your current local working branch with all new commits from the corresponding remote branch on Gitlab. `git pull` is a combination of `git fetch` and `git merge`.
+- `git push`: [Push](/git-tutorials/git-push.md) Uploads all local branch commits to the remote.
 - `git log`: Browse and inspect the evolution of project files.
-- `git remote -v`: [Remote](/git-remote) Show the associated remote repositories and their stored name, like `origin`.
+- `git remote -v`: [Remote](/git-tutorials/git-remote.md) Show the associated remote repositories and their stored name, like `origin`.
 
 ### Getting Started With the Git Workflow
 
-Depending on your operating system, you may already have [Git installed](/git-install-git). But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like Git Gui, or through Gitlab.com. 
+Depending on your operating system, you may already have [Git installed](/git-tutorials/git-install-git.md). But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like Git Gui, or through Gitlab.com. 
 
 #### Create a branch
 
@@ -95,17 +95,17 @@ Once you've created a branch, and moved the HEAD pointer to it by "checking out"
 
 Next, save your changes.
 
-To start your [commit](/git-commit), you need to let Git know what changes you'd like to include with `git add [file]`.
+To start your [commit](/git-tutorials/git-commit.md), you need to let Git know what changes you'd like to include with `git add [file]`.
 
-Once you've saved and staged the changes, you're ready to [make the commit](/git-commit) with `git commit -m "descriptive commit message"`.
+Once you've saved and staged the changes, you're ready to [make the commit](/git-tutorials/git-commit.md) with `git commit -m "descriptive commit message"`.
 
 #### Push your changes to the remote
 
-So far, if you've made a commit locally, you're the only one that can see it. To let others see your work and begin collaboration, you should "push" your changes using `git push` [Push](/git-push). If you're pushing from a branch for the first time that you've created locally, you may need to give Git some more information. `git push -u origin [branch-name]` tells Git to push the current branch, and create a branch on the remote that matches it with the same name - and also, create a relationship with that branch so that `git push` will be enough information in the future.
+So far, if you've made a commit locally, you're the only one that can see it. To let others see your work and begin collaboration, you should "push" your changes using `git push` [Push](/git-tutorials/git-push.md). If you're pushing from a branch for the first time that you've created locally, you may need to give Git some more information. `git push -u origin [branch-name]` tells Git to push the current branch, and create a branch on the remote that matches it with the same name - and also, create a relationship with that branch so that `git push` will be enough information in the future.
 
 By default, `git push` only pushes the branch that you've currently checked out to.
 
-Sometimes, if there has been a new commit on the branch on the _remote_, you may be blocked from pushing. Don't worry! Start with a simple [`git pull`](/git-pull) to incorporate the changes on the remote into your own local branch, resolve any conflicts or finish the merge from the remote into the local branch, and then try the push again.
+Sometimes, if there has been a new commit on the branch on the _remote_, you may be blocked from pushing. Don't worry! Start with a simple [`git pull`](/git-tutorials/git-pull.md) to incorporate the changes on the remote into your own local branch, resolve any conflicts or finish the merge from the remote into the local branch, and then try the push again.
 
 #### Open a merge request
 
