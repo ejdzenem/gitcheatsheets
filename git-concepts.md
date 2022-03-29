@@ -2,7 +2,7 @@
 
 ## Git vocabulary
 
-Within a single repository:
+### Within a single repository:
 I can store different versions of the project.  
 These in-repository changes are tracked via _branches_.  
 To switch from my current branch to another one, I will _check out_ the branch I want to switch to.
