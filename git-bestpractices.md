@@ -17,7 +17,7 @@ with `git add`) your work will not be lost for at least two weeks unless you rea
 When attempting to find your lost commits, first make *sure* you will
 not lose any current work. You should commit or stash your current work
 before performing any recovery efforts that might destroy your current
-work and perhaps take backups of it (see [Backups](#backups) below).
+work and perhaps take backups of it (see [Backups](#do-backups) below).
 After finding the commits you can `reset`, `rebase`, `cherry-pick`,
 `merge`, or otherwise do what is
 necessary to get the commit history and work tree you desire.
@@ -32,10 +32,8 @@ in the reflog (`git log -g`), they might be in lost&found
     you each commit that modified the git repository. You can use it to
     find the commit name (SHA-1) of the state of the repository before
     (and after) you typed that command. While you are free to go through
-    the reflog manually (`git log -g`
-    ) or searching it (`git log -Sfoo -g`), you can also visualize the 
-    repository using the following command (Look
-    for dots without children and without green labels):
+    the reflog manually (`git log -g`) or searching it (`git log -Sfoo -g`), you can also visualize the 
+    repository using the following command (Look for dots without children and without green labels):
 
     ```bash
     gitk --all --date-order $(git log -g --pretty=%H)
@@ -137,7 +135,7 @@ for f in */.; do (cd $$f; echo $$f; git fetch); done
 ## Don't change published history
 
 Once you `git push` (or in theory someone pulls from your repo,
-but people who pull from a workingrepo often deserve what they get)
+but people who pull from a working repo often deserve what they get)
 your changes to the authoritative
 upstream repository or otherwise make the commits or tags publicly
 visible, you should ideally consider those commits etched in diamond for
@@ -366,7 +364,7 @@ ideas (but they should!)
     for "forced update" in that output or in the reflog for the remote
     branches.
 
-    You can make this the default with the "branch.\<name\>.rebase"
+    You can make this the default with the `branch.<name>.rebase`
     configuration option (and more practically, by the
     "branch.autosetuprebase" configuration option). See [man
     git-config](https://gitirc.eu/git-config.html).
@@ -541,7 +539,7 @@ effects of each and why they might be in a best practices "Don't" list.
     directory without hope of recourse.
 
 - use `git clean` without
-    previously running with "`-n`" first
+    previously running with `-n` first
 
     This will delete untracked files without hope of recourse.
 

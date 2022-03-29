@@ -128,6 +128,6 @@ Discards all history and changes back to the specified commit
 - **branch**: a lightweight movable pointer to a commit
 - **clone**: a local version of a repository, including all commits and branches
 - **remote**: a common repository on Gitlab that all team members use to exchange their changes
-- **fork**: a copy of a repository on Gitlab owned by a different user
+- **fork**: a copy of a repository on Gitlab/Hub/... owned by a different user
 - **pull request**: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
 - **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git switch`

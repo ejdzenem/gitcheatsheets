@@ -1,28 +1,27 @@
 # Git Add
 
-The `git add` command adds new or changed files in your working directory to the Git staging area.
-
-`git add` is an important command - without it, no `git commit` would ever do anything. Sometimes, `git add` can have a reputation for being an unnecessary step in development. But in reality, `git add` is an important and powerful tool. `git add` allows you to shape history without changing how you work.
-
-![image of working directory, staging area, and committed history with commands shown and visualized]()
-
-## When do you use `git add`?
-
-```sh
+```bash
 git add README.md
 ```
 
+The `git add` command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, changes are not actually recorded until you run `git commit`.
+
+![image of working directory, staging area, and committed history with commands shown and visualized](images/git-add-commit.svg)
+
+### When do you use `git add`?
+
+
+
 As you're working, you change and save a file, or multiple files. Then, before you commit, you must `git add`. This step allows you to choose what you are going to commit. Commits should be logical, atomic units of change - but not everyone works that way. Maybe you are making changes to files that _aren't_ logical or atomic units of change.  `git add` allows you to systematically shape your commits and your history anyway.
 
-### What Does Git Add Do?
+## The staging area
 
+The primary function of the `git add` command, is to promote pending changes in the working directory, to the 'git staging' area. It helps to think of it as a buffer between the working directory and the project history.
+
+Instead of committing all of the changes you've made since the last commit, the stage lets you group related changes into highly focused snapshots before actually committing it to the project history. This means you can make all sorts of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the stage and commit them piece-by-piece. As in any revision control system, it’s important to create atomic commits so that it’s easy to track down bugs and revert changes with minimal impact on the rest of the project.
 `git add [filename]` selects that file, and moves it to the staging area, marking it for inclusion in the next commit. You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.
 
-This means if you `git add` a deleted file the _deletion_ is staged for commit. The language of "add" when you're actually "deleting" can be confusing. If you think or use `git stage` in place of `git add`, the reality of what is happening may be more clear.
-
-`git add` and `git commit` go together hand in hand. They don't work when they aren't used together. And, they both work best when used thinking of their joint functionality.
-
-## How to Use `git add`
+This means if you `git add` a deleted file the _deletion_ is staged for commit. The language of "add" when you're actually "deleting" can be confusing.
 
 ### Common usages and options for `git add`
 
@@ -30,9 +29,9 @@ This means if you `git add` a deleted file the _deletion_ is staged for commit. 
 * `git add .`: Stage all files (that are not listed in the `.gitignore`) in the entire repository
 * `git add -p`: Interactively stage hunks of changes
 
-You can see all of the many options with `git add` in [git-scm's documentation](https://git-scm.com/docs/git-add).
+You can see the options of `git add` in [git-scm's documentation](https://git-scm.com/docs/git-add).
 
-## Examples of `git add`
+## Example use of `git add`
 
 `git add` usually fits into the workflow in the following steps:
 
@@ -100,7 +99,7 @@ To avoid this, first stage all changes, then unstage them together, or commit th
 
 #### Using `git reset` to undo `git add`
 
-`git reset` is a flexible and powerful command. One of its many use cases is to move changes _out_ of the staging area. To do this, use the "mixed" level of reset, which is the default.
+`git reset` is a flexible command. One of its many use cases is to move changes _out_ of the staging area. To do this, use the "mixed" level of reset, which is the default.
 
 To move staged changes from the staging area to the working directory without affecting committed history, first make sure that you don't have any additional changes to the files in question as mentioned above. Then, type `git reset HEAD` (aka `git reset --mixed HEAD`).
 
