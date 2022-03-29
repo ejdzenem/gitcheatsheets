@@ -97,8 +97,6 @@ git remote add origin [repo-url]
 git remote -v
 ```
 
-[PLACEHOLDER - Local-Upstream Diagram]
-
 With a remote setup, and the traditional name of "origin" aliased to the URL, publishing local commits is simple.
 
 ```sh

@@ -46,7 +46,7 @@ A new repository can either be created locally, or an existing repository can be
 
 ```$ git init```
 
-The git init command turns an existing directory into a new Git repository inside the folder you are running this command. After using the `git init` command, link the local repository to an empty Gitlab repository using the following command:
+The `git init` command turns an existing directory into a new Git repository inside the folder you are running this command. After using the `git init` command, link the local repository to an empty Gitlab repository using the following command:
 
 ```$ git remote add origin [url]```
 
