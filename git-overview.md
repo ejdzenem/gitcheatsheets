@@ -30,7 +30,7 @@ Whether or not you've worked with version control before, there are a few things
 
 - Branches are lightweight and cheap, so it's OK to have many of them
 - Git stores changes in SHA hashes, which work by compressing text files. That makes Git a very good version control system (VCS) for software programming, but not so good for binary files like images or videos.
-- Git repositories can be connected, so you can work on one locally on your own machine, and connect it to a shared repository. This way, you can [push](/git-guides/git-push) and [pull](/git-guides/git-pull) changes to a repository and easily collaborate with others.
+- Git repositories can be connected, so you can work on one locally on your own machine, and connect it to a shared repository. This way, you can [push](/git-push) and [pull](/git-pull) changes to a repository and easily collaborate with others.
 
 ## What is Git Written in?
 
@@ -83,7 +83,7 @@ Some of the most important and most used commands that you'll find there are:
 
 ### Getting Started With the Git Workflow
 
-Depending on your operating system, you may already have [Git installed](/git-guides/git-install-git). But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like Git Gui, or through Gitlab.com. 
+Depending on your operating system, you may already have [Git installed](/git-install-git). But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like Git Gui, or through Gitlab.com. 
 
 #### Create a branch
 
