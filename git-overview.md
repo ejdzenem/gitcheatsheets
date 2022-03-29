@@ -71,15 +71,15 @@ The benefits of this can't be overstated.
 Some of the most important and most used commands that you'll find there are:
 
 - `git clone [url]`: [Clone](/git-clone) (download) a repository that already exists on Gitlab, including all of the files, branches, and commits.
-- `git status`: [Status](/git-status)Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
+- `git status`: [Status](/git-status) Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
 - `git branch`: [Branch](/git-branch) This shows the existing branches in your local repository. You can also use `git branch [branch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
 - `git checkout [branch-name]`: Switches to the specified branch and updates the working directory.
-- `git add [file]`: Snapshots the file in preparation for versioning, adding it to the staging area.
-- `git commit -m "descriptive message"`: Records file snapshots permanently in the version history.
+- `git add [file]`: [Add](/git-add) Snapshots the file in preparation for versioning, adding it to the staging area.
+- `git commit -m "descriptive message"`: [Commit](/git-commit) Records file snapshots permanently in the version history.
 - `git pull`: [Pull](/git-pull) Updates your current local working branch with all new commits from the corresponding remote branch on Gitlab. `git pull` is a combination of `git fetch` and `git merge`.
-- `git push`: Uploads all local branch commits to the remote.
+- `git push`: [Push](/git-push) Uploads all local branch commits to the remote.
 - `git log`: Browse and inspect the evolution of project files.
-- `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
+- `git remote -v`: [Remote](/git-remote) Show the associated remote repositories and their stored name, like `origin`.
 
 ### Getting Started With the Git Workflow
 
