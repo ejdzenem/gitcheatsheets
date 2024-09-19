@@ -334,7 +334,7 @@ ideas (but they should!)
     non-authoritative repository which is not fully up to date with
     respect to your authoritative upstream. A rebase in this
     circumstance could cause the published history to be rewritten,
-    [which would be bad](#don't-change-published-history).
+    [which would be bad](#dont-change-published-history).
 
     Some people argue against this because the non-final commits may
     lose whatever testing those non-final commits might have had since
