@@ -355,7 +355,7 @@ ideas (but they should!)
     history with implicit blame of rebase).
 
     Still others argue that you are unable to automatically discover
-    when someone else has [rewritten public history](#don't-change-published-history) if you
+    when someone else has [rewritten public history](#dont-change-published-history) if you
     use `git pull --rebase`
     normally, so someone might have hidden something malicious in an
     older (presumably already reviewed) commit. If this is of concern,
@@ -568,16 +568,16 @@ effects of each and why they might be in a best practices "Don't" list.
 
 - rewrite public history
 
-    See [section about this topic](#don't-change-published-history). It bears repeating,
+    See [section about this topic](#dont-change-published-history). It bears repeating,
     though.
 
 - change where a tag points
 
-    This is another way to [rewrite public history](#don't-change-published-history).
+    This is another way to [rewrite public history](#dont-change-published-history).
 
 - use `git-filter-branch`
 
-    Still another way to [rewrite public history](#don't-change-published-history).
+    Still another way to [rewrite public history](#dont-change-published-history).
 
     However, if you are going to use git-filter-branch, make sure you
     end your command with `–tag-name-filter cat ––all` unless you
