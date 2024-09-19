@@ -40,8 +40,8 @@ A  feature on Gitlab (called pull request in Github) which provides conversation
 The first thing to setup when using Git is two important fields about the user. This allows appropriate credit and traceability for project contributions.
 
 ```sh
-git config --global user.name "Matej Kratochvil"
-git config --global user.email "matej.kratochvil@creditas.cz"
+git config --global user.name "Jmeno Prijmeni"
+git config --global user.email "muj.email.cz"
 ```
 
 ## Versioning Files
